@@ -95,8 +95,7 @@
                 android:fontFamily="sans-serif-thin"
                 android:textColor="@color/dark_grey"
                 android:textStyle="bold"
-                android:text="ownerName"
-                app:hideIfEmpty="ownerName"
+                android:text="by Haseeb Malik"
                 app:layout_constraintEnd_toEndOf="@+id/eventName"
                 app:layout_constraintStart_toStartOf="@+id/eventName"
                 app:layout_constraintTop_toBottomOf="@+id/eventName"
@@ -136,14 +135,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/dark_grey"
-                        tools:text="Tuesday June 5" />
+                        tools:text="Tuesday June 5"
+                        android:text="Tuesday June 5"
+                        />
 
                     <TextView
                         android:id="@+id/eventDateDetailsSecond"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/dark_grey"
-                        tools:text="Wed June 5" />
+                        tools:text="Wed June 5"
+                        android:text="Wed June 5"
+                        />
 
                 </LinearLayout>
             </LinearLayout>
@@ -157,7 +160,6 @@
                 android:layout_marginRight="@dimen/layout_margin_medium"
                 android:background="?selectableItemBackground"
                 android:orientation="horizontal"
-                app:hideIfEmpty="eventlocationName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/eventTimingLinearLayout"
                 app:layout_constraintTop_toBottomOf="@+id/eventTimingLinearLayout">
@@ -232,7 +234,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="refund_Policy"
+                        android:text="Refund Policy"
                         android:textColor="@color/dark_grey"
                         tools:text="Refund Policy" />
 
@@ -241,7 +243,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
-                        android:text="xyz"
+                        android:text="No Refunds"
                         android:lines="2"
                         android:textColor="@color/dark_grey"
                         tools:text="No refunds" />
@@ -255,7 +257,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/layout_margin_large"
                 android:orientation="vertical"
-                app:hideIfEmpty="description"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -277,7 +278,7 @@
                     android:layout_marginLeft="@dimen/layout_margin_large"
                     android:layout_marginRight="@dimen/layout_margin_large"
                     android:layout_marginBottom="@dimen/divider_margin_top"
-                    android:text="about"
+                    android:text="About"
                     android:textColor="@color/dark_grey"
                     android:textSize="@dimen/event_details_headers" />
 
@@ -286,7 +287,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/layout_margin_large"
-                    app:strippedHtml="eventdescription"
                     android:layout_marginRight="@dimen/layout_margin_large"
                     android:layout_marginBottom="@dimen/layout_margin_large"
                     android:ellipsize="end"
@@ -310,7 +310,6 @@
             <LinearLayout
                 android:id="@+id/locationContainer"
                 android:layout_width="0dp"
-                app:hideIfEmpty="locationName"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -342,8 +341,7 @@
                     android:id="@+id/locationUnderMap"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="locationName"
-                    app:hideIfEmpty="locationName"
+                    android:text="Pakistan"
                     android:layout_marginLeft="@dimen/layout_margin_large"
                     android:layout_marginRight="@dimen/layout_margin_large"
                     android:layout_marginBottom="@dimen/divider_margin_top"
@@ -368,7 +366,6 @@
                 android:layout_marginTop="@dimen/layout_margin_large"
                 android:descendantFocusability="blocksDescendants"
                 android:orientation="vertical"
-                app:hideIfEmpty="ownerName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -404,7 +401,6 @@
                         android:id="@+id/organizerLogoIcon"
                         android:layout_width="@dimen/logo_icon_width"
                         android:layout_height="@dimen/logo_icon_height"
-                        app:avatarUrl="eventlogoUrl"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginEnd="@dimen/layout_margin_large"
                         android:layout_marginRight="@dimen/layout_margin_large"
@@ -430,8 +426,6 @@
                             android:id="@+id/eventOrganiserDescription"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            app:strippedHtml="ownerDescription"
-                            app:hideIfEmpty="ownerDescription"
                             android:layout_marginBottom="@dimen/layout_margin_small"
                             android:background="?selectableItemBackground"
                             android:ellipsize="end"
@@ -470,7 +464,7 @@
                         android:textStyle="bold"
                         android:layout_marginBottom="@dimen/layout_margin_large"
                         android:textColor="@color/dark_grey"
-                        android:text="event_host_details" />
+                        android:text="event host details" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/socialLinksRecycler"
@@ -542,7 +536,7 @@
                     android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="see_all_feedback"
+                    android:text="see all feedback"
                     android:padding="@dimen/padding_medium"
                     android:background="?selectableItemBackground"
                     android:textColor="@color/colorAccent"
@@ -558,7 +552,7 @@
                     android:layout_marginTop="@dimen/layout_margin_medium"
                     android:layout_marginBottom="@dimen/layout_margin_large"
                     android:textColor="@color/colorAccent"
-                    android:text="write_feedback" />
+                    android:text="write feedback" />
             </LinearLayout>
 
 

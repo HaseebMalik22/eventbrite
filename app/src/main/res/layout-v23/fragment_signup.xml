@@ -145,7 +145,6 @@
         </LinearLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:theme="@style/AccentButton"
             style="@style/Widget.MaterialComponents.Button"
             android:id="@+id/signUpButton"
             android:layout_width="match_parent"

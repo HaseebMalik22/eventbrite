@@ -98,7 +98,6 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.button.MaterialButton
-                    android:theme="@style/AccentButton"
                     style="@style/Widget.MaterialComponents.Button"
                     android:id="@+id/loginButton"
                     android:layout_width="match_parent"

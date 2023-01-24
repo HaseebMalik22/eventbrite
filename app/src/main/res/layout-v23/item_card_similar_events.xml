@@ -28,7 +28,6 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:eventImage="originalImageUrl"
             android:transitionName="cardItemEventImage"
             android:src="@drawable/header" />
 
@@ -56,7 +55,6 @@
             android:layout_marginEnd="@dimen/fab_margin_right"
             android:background="@android:color/white"
             android:scaleType="center"
-            app:isFavorite="favorite"
             app:backgroundTint="@android:color/white"
             app:tint="@color/colorAccent"
             app:elevation="@dimen/fab_elevation"

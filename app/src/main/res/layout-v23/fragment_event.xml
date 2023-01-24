@@ -23,19 +23,19 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonTickets"
-                style="@style/AppTheme.MaterialButton.RoundedCorners"
+                style="/AppTheme.MaterialButton.RoundedCorners"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_margin="@dimen/layout_margin_large"
-                android:text="@string/tickets" />
+                android:text="tickets" />
 
             <include
                 layout="@layout/content_event"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="@dimen/layout_margin_extreme_large"
-                bind:event="@{event}" />
+                bind:event="event" />
 
             <View
                 android:layout_width="match_parent"
